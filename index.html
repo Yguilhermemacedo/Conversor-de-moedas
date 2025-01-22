@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moedas</title>
+    <link rel="shortcut icon" href="money-management.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Conversor de Moeda</h1>
+        <section class="container">
+            <div class="campo-1">
+                <div>
+                    <label for="escolha-moeda">Selecione o tipo de moeda:</label>
+                    <select name="escolha" id="escolha-moeda">
+                        <option value="Real">Real</option>
+                        <option value="Peso">Peso</option>
+                        <option value="Euro">Euro</option>
+                        <option value="Dólar">Dólar</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="valor-converter">Valor á ser convertido</label>
+                    <input type="text" name="valor-converter" id="valor-converter" placeholder="0.00" required>
+                </div>
+                <div>
+                    <label for="escolha-moeda-converte">Escolha para qual moeda deseja converter</label>
+                    <select name="escolha" id="escolha-moeda-converte">
+                        <option value="Real">Real</option>
+                        <option value="Peso">Peso</option>
+                        <option value="Euro">Euro</option>
+                        <option value="Dólar">Dólar</option>
+                    </select>
+                </div>
+            </div>
+            <div class="campo-2">
+                <div>
+                    <p>De</p>
+                    <div class="valor-de">
+                       
+                        <span class="sigla-moeda-conversora"></span>
+                    </div>
+                </div>
+                <i class='bx bx-transfer'></i>
+                <div>
+                    <p>Para</p>
+                    <div class="valor-para">
+                       
+                        <span class="sigla-moeda-convertida"></span>
+                    </div>
+                </div>
+            </div>
+            <button id="btn-converter">Converter</button>
+        </section>        
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

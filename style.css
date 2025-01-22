@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main{
+    height: 100vh;
+    width: 100%;
+    background-color: #075f4cd0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1{
+    margin-bottom: 1.25rem;
+    margin-right: 4rem;
+    font-weight: 6  00;
+    color: #ffffff;
+}
+
+.container{
+    height: auto;
+    width: 614px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#F9FFFB;
+    border-radius: 10px;
+    box-shadow: 4px 4px 8.2px rgba(0, 0, 0, 0.041);
+}
+
+.campo-1{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+div{
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+div label{
+    font-weight: 600;
+    color: #9F9F9F;
+}
+
+div > input,select{
+    height: 49px;
+    width: 253px;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    background-color: #f0f8f4;
+    outline: none;
+}
+
+
+button{
+    height: 40px;
+    width: 300px;
+    margin-top: 1.4rem;
+    background-color: #21AC90;
+    color: #fff;
+    border-radius: 65px;
+    font-size: 19px;
+    border: none;
+    transition: all 0.3s ease-in-out;
+}
+
+button:hover{
+    background-color: #187c68;
+}
+
+.campo-2{
+    height: auto;
+    width: 100%;
+    display: none;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 1rem;
+}
+
+.campo-2 > div{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.valor-de,.valor-para{
+    height: 49px;
+    width: 227px;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f3f3f3;
+    border-radius: 10px;
+}
+
+i{
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.sigla-moeda-conversora, .sigla-moeda-convertida{
+    font-weight: 700;
+}
